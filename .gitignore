@@ -1,0 +1,6 @@
+bin/
+obj/
+*.tss
+*.suo
+*.csproj.user
+*.designer.cs
