@@ -34,11 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Employee_Models">
-      <HintPath>..\..\Employee_Models\Employee_Models\bin\Debug\Employee_Models.dll</HintPath>
+    <Reference Include="Employee_Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Employee_Repo\Employee_Repo\bin\Release\Employee_Models.dll</HintPath>
     </Reference>
-    <Reference Include="Employee_Repo">
-      <HintPath>..\..\Employee_Repo\Employee_Repo\bin\Debug\Employee_Repo.dll</HintPath>
+    <Reference Include="Employee_Repo, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Employee_Repo\Employee_Repo\bin\Release\Employee_Repo.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
