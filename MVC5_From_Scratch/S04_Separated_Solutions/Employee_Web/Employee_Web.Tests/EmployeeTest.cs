@@ -15,6 +15,8 @@ namespace Employee_Web.Tests
             var empController = new EmployeeController(repo);
             var value = empController.Get(1);
 
+            var dummyEmp = new Employee();
+
             Assert.AreEqual("1 : Mike", value);
         }
     }
