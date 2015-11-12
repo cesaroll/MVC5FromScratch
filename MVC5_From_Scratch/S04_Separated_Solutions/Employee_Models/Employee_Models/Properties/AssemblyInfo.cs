@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Employee Models Assembly")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Cesar Lopez")]
-[assembly: AssemblyProduct("Employee_Models")]
+[assembly: AssemblyProduct("Employee.Models")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
