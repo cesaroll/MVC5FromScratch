@@ -40,6 +40,9 @@
     <Reference Include="Employee_Repo">
       <HintPath>..\..\Employee_Repo\Employee_Repo\bin\Employee_Repo.dll</HintPath>
     </Reference>
+    <Reference Include="Employee_Web">
+      <HintPath>..\Employee_Web\bin\Employee_Web.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
     <Reference Include="System" />
@@ -62,12 +65,6 @@
   <ItemGroup>
     <Compile Include="EmployeeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Employee_Web\Employee_Web.csproj">
-      <Project>{3886989A-9E09-4268-9D1C-4BFDE14E3341}</Project>
-      <Name>Employee_Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
