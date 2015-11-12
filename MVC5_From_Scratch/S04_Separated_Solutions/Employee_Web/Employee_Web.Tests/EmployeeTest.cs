@@ -1,5 +1,4 @@
-﻿using Employee_Models;
-using Employee_Repo;
+﻿using Employee_Repo;
 using Employee_Web.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -14,9 +13,7 @@ namespace Employee_Web.Tests
             var repo = new EmployeeRepository();
             var empController = new EmployeeController(repo);
             var value = empController.Get(1);
-
-            var dummyEmp = new Employee();
-
+            
             Assert.AreEqual("1 : Mike", value);
         }
     }

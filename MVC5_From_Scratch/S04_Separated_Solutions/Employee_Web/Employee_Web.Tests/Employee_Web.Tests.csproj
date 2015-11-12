@@ -40,9 +40,6 @@
     <Reference Include="Employee_Repo">
       <HintPath>..\..\Employee_Repo\Employee_Repo\bin\Employee_Repo.dll</HintPath>
     </Reference>
-    <Reference Include="Employee_Web">
-      <HintPath>..\Employee_Web\bin\Employee_Web.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
     <Reference Include="System" />
@@ -68,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Employee_Web\Employee_Web.csproj">
+      <Project>{3886989a-9e09-4268-9d1c-4bfde14e3341}</Project>
+      <Name>Employee_Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
