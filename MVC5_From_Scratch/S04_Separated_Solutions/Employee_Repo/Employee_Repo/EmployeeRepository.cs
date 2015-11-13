@@ -20,7 +20,7 @@ namespace Employee_Repo
                         if (_employees == null)
                         {
                             _employees = new List<Employee>();
-                            _employees.Add(new Employee() {Id = 1, Name = "Mike", Surname = "Gregory"});
+                            _employees.Add(new Employee() {Id = 1, Name = "Mike", MiddleName = "", Surname = "Gregory"});
                             _employees.Add(new Employee() {Id = 2, Name = "David", Surname = "Graham"});
                         }
                     }
