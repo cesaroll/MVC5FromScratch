@@ -12,7 +12,7 @@ namespace Employee_Web.Tests
         {
             var repo = new EmployeeRepository();
             var empController = new EmployeeController(repo);
-            var value = empController.GetEmployee(1);
+            var value = empController.Employee(1);
 
             Assert.AreEqual("1 : Mike", value);
         }
