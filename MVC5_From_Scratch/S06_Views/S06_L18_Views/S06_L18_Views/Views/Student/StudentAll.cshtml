@@ -11,31 +11,56 @@
     <title>Students</title>
 </head>
 <body>
-    <div>
-        <table style="font-size: large; background-color: aqua">
-            <thead>
+<div>
+    <table style="font-size: large; background-color: aqua">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Active</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
             <tr>
-                <th>Id</th>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td><input type="checkbox" checked="@item.IsActive"/></td>
+            </tr>
+        }
+        </tbody>
+
+    </table>
+
+</div>
+
+<div>
+    <table style="font-size: large; background-color: palegoldenrod">
+        <thead>
+            <tr>
                 <th>Name</th>
                 <th>Surname</th>
                 <th>Active</th>
             </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.Name</td>
-                        <td>@item.Surname</td>
-                        <td><input type="checkbox" checked="@item.IsActive"/></td>
-                    </tr>
-                }
-            </tbody>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @Html.Hidden("Id", item.Id)
+                    <td>@Html.Label(item.Name)</td>
+                    <td>@Html.Label(item.Surname)</td>
+                    <td>@Html.CheckBox("Active", item.IsActive)</td>
+                </tr>
+            }
+        </tbody>
 
-        </table>
+    </table>
 
-    </div>
+</div>
 
 </body>
 </html>

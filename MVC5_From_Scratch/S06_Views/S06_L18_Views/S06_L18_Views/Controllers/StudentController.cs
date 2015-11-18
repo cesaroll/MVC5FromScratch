@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Models.Interfaces;
+using Models.Models;
 using Repo.Interfaces;
 
 namespace S06_L18_Views.Controllers
@@ -17,6 +18,7 @@ namespace S06_L18_Views.Controllers
             _studentRepo = studentRepo;
         }
 
+        [HttpGet]
         public ActionResult GetById(int id)
         {
             var student = _studentRepo.Get(id);
@@ -31,11 +33,19 @@ namespace S06_L18_Views.Controllers
             return View("StudentDisplay", student);
         }
 
+        [HttpPost]
+        public ActionResult GetById(Student student)
+        {
+            return View("Saved", student);
+        }
+
+        [HttpGet]
         public ActionResult GetByName(string name)
         {
             return View("StudentDisplay");
         }
 
+        [HttpGet]
         public ActionResult Get()
         {
             return View("StudentAll", _studentRepo.GetAll());

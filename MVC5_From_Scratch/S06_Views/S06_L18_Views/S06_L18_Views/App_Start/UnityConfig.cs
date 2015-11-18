@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Practices.Unity;
 using Models.Interfaces;
+using Models.Models;
 using Repo.Interfaces;
 using Repo.Repositories;
 
@@ -41,6 +42,7 @@ namespace S06_L18_Views.App_Start
             // container.RegisterType<IProductRepository, ProductRepository>();
 
             container.RegisterType<IRepository<IStudent>, StudentRepository>();
+            container.RegisterType<IStudent, Student>();
         }
     }
 }

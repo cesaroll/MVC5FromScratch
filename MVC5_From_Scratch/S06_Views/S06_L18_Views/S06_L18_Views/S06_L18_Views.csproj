@@ -132,6 +132,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\Student\StudentDisplay.cshtml" />
     <Content Include="Views\Student\StudentAll.cshtml" />
+    <Content Include="Views\Student\Saved.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

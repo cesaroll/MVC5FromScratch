@@ -17,32 +17,27 @@
         <label>@ViewBag.Name</label><br/>
         <label>@ViewBag.Surname</label><br/><br/>
         <label>Display using Model</label><br/>
-        <br />
+        <br/>
+
         <div>
-            <table style="font-size: large; background-color: aqua">
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Active</th>
-                </tr>
-                <tr>
-                    <td>@Model.Id</td>
-                    <td>@Model.Name</td>
-                    <td>@Model.Surname</td>
-                    <td>
-                        @if (Model.IsActive)
-                        {
-                            <span style="background-color: green">Active</span>
-                        }
-                        else
-                        {
-                            <span style="background-color: red">Inactive</span>
-                        }
-                    </td>
-                </tr>
-                
-            </table>
+            @using (Html.BeginForm())
+            {
+                <table>
+                    <tr>
+                        @Html.Hidden("Id")
+                    </tr>
+                    <tr>
+                        <td>@Html.Label("Name")</td>
+                        <td>@Html.TextBox("Name")</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.Label("Surname")</td>
+                        <td>@Html.TextBox("Surname")</td>
+                    </tr>
+                </table>
+                <input type="submit" name="Save"/>
+            }
+           
 
         </div>
     </div>
