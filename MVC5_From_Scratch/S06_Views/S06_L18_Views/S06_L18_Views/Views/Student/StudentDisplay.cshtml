@@ -1,0 +1,50 @@
+﻿@model Models.Interfaces.IStudent
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student</title>
+</head>
+<body>
+    <div>
+        <span style="background-color: aqua">This is Student View.</span><br/><br/>
+        <label>Display using ViewBag:</label><br/>
+        <label>@ViewBag.Name</label><br/>
+        <label>@ViewBag.Surname</label><br/><br/>
+        <label>Display using Model</label><br/>
+        <br />
+        <div>
+            <table style="font-size: large; background-color: aqua">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Active</th>
+                </tr>
+                <tr>
+                    <td>@Model.Id</td>
+                    <td>@Model.Name</td>
+                    <td>@Model.Surname</td>
+                    <td>
+                        @if (Model.IsActive)
+                        {
+                            <span style="background-color: green">Active</span>
+                        }
+                        else
+                        {
+                            <span style="background-color: red">Inactive</span>
+                        }
+                    </td>
+                </tr>
+                
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>

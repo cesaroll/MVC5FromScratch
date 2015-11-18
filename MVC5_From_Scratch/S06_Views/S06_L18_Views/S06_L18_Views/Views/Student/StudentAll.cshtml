@@ -1,0 +1,41 @@
+﻿@model IEnumerable<IStudent>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Students</title>
+</head>
+<body>
+    <div>
+        <table style="font-size: large; background-color: aqua">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Active</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Surname</td>
+                        <td><input type="checkbox" checked="@item.IsActive"/></td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
