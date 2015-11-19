@@ -1,4 +1,4 @@
-﻿@model Models.Interfaces.IStudent
+﻿@model IStudent
 @{
     Layout = null;
 }
@@ -11,35 +11,94 @@
     <title>Student</title>
 </head>
 <body>
+
+<style type="text/css">
+    
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+
+    div.dataElem {
+        margin: 5px;
+    }
+
+    h2 > label {
+        width: inherit;
+    }
+
+    .editor-label, .editor-field {
+        float: left;
+        margin-top: 10px;
+    }
+
+    .editor-field input {
+        height: 20px;
+    }
+
+    .editor-label {
+        clear: left;
+    }
+
+    .editor-field {
+        margin-left: 10px;
+    }
+
+    input[type=submit] {
+        float: left;
+        clear: both;
+        margin-top: 10px;
+    }
+
+    .column {
+        float: left;
+        margin: 10px;
+    }
+
+</style>
+
+
+<div>
+    <span style="background-color: aqua">This is Student View.</span><br/><br/>
+    <label>Display using ViewBag:</label><br/>
+    <label>@ViewBag.Name</label><br/>
+    <label>@ViewBag.Surname</label><br/><br/>
+    <label>Display using Model</label><br/>
+    <br/>
+
     <div>
-        <span style="background-color: aqua">This is Student View.</span><br/><br/>
-        <label>Display using ViewBag:</label><br/>
-        <label>@ViewBag.Name</label><br/>
-        <label>@ViewBag.Surname</label><br/><br/>
-        <label>Display using Model</label><br/>
-        <br/>
-
-        <div>
-            @using (Html.BeginForm())
-            {
-                <table>
-                    <tr>
-                        @Html.Hidden("Id")
-                    </tr>
-                    <tr>
-                        <td>@Html.Label("Name")</td>
-                        <td>@Html.TextBox("Name")</td>
-                    </tr>
-                    <tr>
-                        <td>@Html.Label("Surname")</td>
-                        <td>@Html.TextBox("Surname")</td>
-                    </tr>
-                </table>
-                <input type="submit" name="Save"/>
-            }
-           
-
-        </div>
+        @using (Html.BeginForm())
+        {
+                @*
+    <table>
+        <tr>
+            @Html.Hidden("Id")
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Name)</td>
+            <td>@Html.TextBox("Name")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Surname")</td>
+            <td>@Html.TextBox("Surname")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Address")</td>
+            <td>@Html.Editor("Address")</td>
+        </tr>
+    </table>
+    <div>
+        @Html.DropDownListFor(m => m.WillAttend, new[] {new SelectListItem() { Text = "Yes"}, new SelectListItem() {Text = "No"}  })
     </div>
+                *@
+
+            @Html.EditorForModel()
+
+            <input type="submit" name="Save"/>
+        }
+
+
+    </div>
+</div>
 </body>
 </html>

@@ -2,6 +2,7 @@
 using System.Linq;
 using Models.Interfaces;
 using Models.Models;
+using Repo.Config;
 using Repo.Interfaces;
 
 namespace Repo.Repositories
@@ -13,12 +14,30 @@ namespace Repo.Repositories
 
         public StudentRepository()
         {
-            _students = new List<IStudent>();
-            _students.Add(new Student() { Id = 1, Name = "Mike", Surname = "Gregory", IsActive = true });
-            _students.Add(new Student() { Id = 2, Name = "David", Surname = "Graham", IsActive = true});
-            _students.Add(new Student() { Id = 3, Name = "Nancy", Surname = "Drew", IsActive = true});
-            _students.Add(new Student() { Id = 4, Name = "Elizabeth", Surname = "Hughes", IsActive = false});
+            if (_students == null)
+            {
+                _students = new List<IStudent>();
 
+                var ucc = UnityConfig.getInstance(); //Get Unity Config Container access
+
+                AddNewStudent(ucc.Resolve<IStudent>(), 1, "Mike", "Gregory", true, Course.MVC5);
+                AddNewStudent(ucc.Resolve<IStudent>(), 2, "David", "Graham", true, Course.jQuery);
+                AddNewStudent(ucc.Resolve<IStudent>(), 3, "Nancy", "Drew", true, Course.MVC5);
+                AddNewStudent(ucc.Resolve<IStudent>(), 4, "Elizabeth", "Hughes", false, Course.HTML5);
+
+            }
+            
+        }
+
+        private void AddNewStudent(IStudent student, int id, string name, string surname, bool isactive, Course course)
+        {
+            student.Id = id;
+            student.Name = name;
+            student.Surname = surname;
+            student.IsActive = isactive;
+            student.Course = course;
+
+            _students.Add(student);
         }
 
         public IEnumerable<IStudent> GetAll()

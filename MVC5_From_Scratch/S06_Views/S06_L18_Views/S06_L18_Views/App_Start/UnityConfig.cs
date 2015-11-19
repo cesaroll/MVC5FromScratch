@@ -41,8 +41,12 @@ namespace S06_L18_Views.App_Start
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            container.RegisterType<IRepository<IStudent>, StudentRepository>();
             container.RegisterType<IStudent, Student>();
+            container.RegisterType<IRepository<IStudent>, StudentRepository>();
+            
+            container.RegisterType<ISubject, Subject>();
+            container.RegisterType<IRepository<ISubject>, SubjectRepository>();
+            
         }
     }
 }

@@ -122,9 +122,11 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CustomHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +135,8 @@
     <Content Include="Views\Student\StudentDisplay.cshtml" />
     <Content Include="Views\Student\StudentAll.cshtml" />
     <Content Include="Views\Student\Saved.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Course.cshtml" />
+    <Content Include="Views\Subject\SubjectDisplay.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,38 @@
+﻿
+@model IEnumerable<ISubject>
+
+@{
+    Layout = null;
+}
+
+@helper DisplaySubjects(IEnumerable<ISubject> subjects)
+{
+
+foreach (var subject in subjects)
+{
+    <b>@Html.Label(subject.Name)</b><br/>
+    foreach (var topic in subject.Topics)
+    {
+        <i>@topic</i><br/>
+    }
+}
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Subjects</title>
+</head>
+<body>
+<div>
+@*    Internal Helper Mehtod*@
+    @DisplaySubjects(Model)
+    <br/><br/>
+@*    External Helper Method*@
+    @Html.DisplaySubjects(Model)
+</div>
+</body>
+</html>
