@@ -1,3 +1,6 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@(Html.Telerik().StyleSheetRegistrar().DefaultGroup(g => g.Add("telerik.common.min.css").Add("telerik.web20.min.css").Combined(true).Compress(true)))
+@(Html.Telerik().ScriptRegistrar())

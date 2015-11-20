@@ -21,12 +21,7 @@
         <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.Name</td>
-                <td>@item.Surname</td>
-                <td><input type="checkbox" checked="@item.IsActive"/></td>
-            </tr>
+            @Html.Partial("_StudentRow", item)
         }
         </tbody>
 
@@ -58,6 +53,51 @@
     </table>
 
 </div>
+
+<br/>
+<b>Telerik Grid</b>
+<br/>
+
+@*    Here I am using Telerik Grid to Show Data*@
+@*    Add Telerik.Web.Mvc.UI into web.config namespaces*@
+
+<div id="StudentsGrid">
+    @(
+    
+    Html.Telerik().Grid(Model)
+        .Name("StudentsGrid")
+        .Columns(col =>
+        {
+            col.Bound(m => m.Id).Hidden().Groupable(false);
+            col.Bound(m => m.Name).Groupable(false);
+            col.Bound(m => m.Surname).Groupable(false);
+            col.Bound(m => m.IsActive).Groupable(true); //I want only this as Grupable
+        })
+        .Pageable(a => a.PageSize(10))
+        .Groupable()
+        .Sortable()
+        .Scrollable()
+        .Filterable()
+        
+          )
+</div>
+
+<br/>
+<br/>
+<div>
+    @Html.ActionLink("Subjects", "Get", "Subject")
+</div>
+
+<br/>
+<br/>
+<div>
+    @Html.ActionLink("Logout", "Thanks")
+</div>
+
+@*    Add the following to _ViewStart*@
+
+@*@(Html.Telerik().StyleSheetRegistrar().DefaultGroup(g => g.Add("telerik.common.min.css").Add("telerik.web20.min.css").Combined(true).Compress(true)))*@
+@*@(Html.Telerik().ScriptRegistrar())*@
 
 </body>
 </html>

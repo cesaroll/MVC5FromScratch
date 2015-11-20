@@ -50,5 +50,17 @@ namespace S06_L18_Views.Controllers
         {
             return View("StudentAll", _studentRepo.GetAll());
         }
+
+        [HttpGet]
+        public ActionResult StudentAll()
+        {
+            return RedirectToAction("Get");
+        }
+
+        public ActionResult Thanks()
+        {
+            return View();
+        }
+
     }
 }
