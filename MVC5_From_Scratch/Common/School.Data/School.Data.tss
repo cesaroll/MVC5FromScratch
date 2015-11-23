@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data.Tests\RepositoryTests\StudentRepositoryTests.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data.Tests\RepositoryTests\SubjectRepositoryTests.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data.Interfaces\IRepository.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data.Interfaces\IStudentRepository.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data.Interfaces\ISubjectRepository.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data\SubjectRepository.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data\StudentRepository.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\Common\School.Data\Sch.Data.DependencyInversion\DataDIConfig.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

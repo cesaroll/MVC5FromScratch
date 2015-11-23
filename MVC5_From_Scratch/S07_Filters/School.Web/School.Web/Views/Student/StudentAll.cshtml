@@ -1,0 +1,35 @@
+﻿@using Telerik.Web.Mvc.UI;
+@using Ces.Sch.Models.Interfaces;
+
+@model IEnumerable<IStudent>
+
+@{
+    ViewBag.Title = "Students";
+}
+
+
+<div>
+    <span>Students:</span>
+</div>
+
+<div>
+
+    @(
+
+    Html.Telerik().Grid(Model)
+        .Name("StudentsGrid")
+        .Columns(col =>
+        {
+            col.Bound(m => m.Id).Hidden().Groupable(false);
+            col.Bound(m => m.Name).Groupable(false);
+            col.Bound(m => m.Surname).Groupable(false);
+            col.Bound(m => m.IsActive).Groupable(true); //I want only this as Grupable
+        })
+        .Pageable(a => a.PageSize(10))
+        .Sortable()
+        .Scrollable()
+        .Filterable()
+
+    )
+
+</div>

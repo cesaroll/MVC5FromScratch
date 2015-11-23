@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Views\Student\StudentAll.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\views\web.config</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\controllers\studentcontroller.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\views\_viewstart.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\views\student\thanks.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\controllers\subjectcontroller.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\App_Start\UnityConfig.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

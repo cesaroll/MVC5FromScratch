@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Models.Interfaces;
-using Models.Models;
-using Repo.Config;
-using Repo.Interfaces;
+using Ces.Sch.Data.Interfaces;
+using Ces.Sch.Models.Enums;
+using Ces.Sch.Models.Interfaces;
+using Ces.Sch.Models.DependencyInversion;
 
-namespace Repo.Repositories
+namespace Ces.Sch.Data
 {
-    public class StudentRepository: IRepository<IStudent>
+    public class StudentRepository : IStudentRepository
     {
-
         private static List<IStudent> _students;
 
         public StudentRepository()
@@ -17,16 +16,14 @@ namespace Repo.Repositories
             if (_students == null)
             {
                 _students = new List<IStudent>();
-
-                var ucc = UnityConfig.getInstance(); //Get Unity Config Container access
                 
-                AddNewStudent(ucc.Resolve<IStudent>(), 1, "Mike", "Gregory", true, Course.MVC5);
-                AddNewStudent(ucc.Resolve<IStudent>(), 2, "David", "Graham", true, Course.jQuery);
-                AddNewStudent(ucc.Resolve<IStudent>(), 3, "Nancy", "Drew", true, Course.MVC5);
-                AddNewStudent(ucc.Resolve<IStudent>(), 4, "Elizabeth", "Hughes", false, Course.HTML5);
+                AddNewStudent(ModelsDIConfig.Resolve<IStudent>(), 1, "Mike", "Gregory", true, Course.MVC5);
+                AddNewStudent(ModelsDIConfig.Resolve<IStudent>(), 2, "David", "Graham", true, Course.jQuery);
+                AddNewStudent(ModelsDIConfig.Resolve<IStudent>(), 3, "Nancy", "Drew", true, Course.MVC5);
+                AddNewStudent(ModelsDIConfig.Resolve<IStudent>(), 4, "Elizabeth", "Hughes", false, Course.HTML5);
 
             }
-            
+
         }
 
         private void AddNewStudent(IStudent student, int id, string name, string surname, bool isactive, Course course)
@@ -40,13 +37,14 @@ namespace Repo.Repositories
             _students.Add(student);
         }
 
-        public IEnumerable<IStudent> GetAll()
-        {
-            return _students;
-        }
         public IStudent Get(int id)
         {
             return _students.FirstOrDefault(s => s.Id == id);
+        }
+
+        public IEnumerable<IStudent> GetAll()
+        {
+            return _students;
         }
     }
 }

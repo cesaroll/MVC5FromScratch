@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>Start Page</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S04_Separated_Solutions\Employee_Web\Employee_Web\App_Start\RouteConfig.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S04_Separated_Solutions\Employee_Web\Employee_Web\App_Start\UnityConfig.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S04_Separated_Solutions\Employee_Web\Employee_Web\Controllers\EmployeeController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S04_Separated_Solutions\Employee_Web\Employee_Web.Tests\EmployeeTest.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>
