@@ -2,25 +2,37 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
+      <string>Start Page</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Controllers\SubjectController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Views\Subject\SubjectDisplay.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Views\Shared\EditorTemplates\Course.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
       <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Views\Student\StudentAll.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\views\web.config</string>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Controllers\StudentController.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\controllers\studentcontroller.cs</string>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\App_Start\RouteConfig.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\views\_viewstart.cshtml</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\views\student\thanks.cshtml</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s06_views\s06_l18_views\s06_l18_views\controllers\subjectcontroller.cs</string>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Views\Student\StudentDisplay.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\App_Start\UnityConfig.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Views\Shared\_Layout.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S06_Views\S06_L18_Views\S06_L18_Views\Views\_ViewStart.cshtml</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

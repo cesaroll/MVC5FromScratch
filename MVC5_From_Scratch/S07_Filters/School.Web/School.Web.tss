@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s07_filters\school.web\school.web\views\student\studentall.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S07_Filters\School.Web\School.Web\Controllers\StudentController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\my_data_personal\tech\workspaces\udemy\asp.net_mvc5_from_scratch\mvc5_from_scratch\s07_filters\school.web\school.web\filters\customauthattribute.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S07_Filters\School.Web\School.Web\Filters\CustomAuthenticationAttribute.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S07_Filters\School.Web\School.Web\Filters\ExceptionAttribute.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\My_Data_Personal\Tech\Workspaces\Udemy\ASP.Net_MVC5_From_Scratch\MVC5_From_Scratch\S07_Filters\School.Web\School.Web\Views\Shared\Error.cshtml</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>
